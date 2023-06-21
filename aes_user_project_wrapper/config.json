@@ -4,7 +4,7 @@
         "dir::rtl/defines.v",
         "dir::rtl/user_project_wrapper.v"
     ],
-    "RUN_VERILATOR": 0,
+    "RUN_LINTER": 0,
     "QUIT_ON_SYNTH_CHECKS": 0,
     "ROUTING_CORES": 1,
     "CLOCK_PERIOD": 25,
