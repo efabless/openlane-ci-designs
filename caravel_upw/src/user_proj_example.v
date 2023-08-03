@@ -35,10 +35,16 @@
  *-------------------------------------------------------------
  */
 
+`ifdef LINT_INCLUDE
+    `include "defines.v"
+`endif
+
+
 /// sta-blackbox
 module user_proj_example #(
     parameter BITS = 32
 )(
+
 `ifdef USE_POWER_PINS
     inout vccd1,	// User area 1 1.8V supply
     inout vssd1,	// User area 1 digital ground
