@@ -36,10 +36,6 @@
  *-------------------------------------------------------------
  */
 
-`ifdef LINT_INCLUDE
-    `include "defines.v"
-`endif
-
 module user_proj_example2 #(
     parameter BITS = 32
 )(

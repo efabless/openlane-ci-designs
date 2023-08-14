@@ -131,5 +131,3 @@ set ::env(RUN_CTS) 0
 
 # magic extraction issues
 set ::env(MAGIC_DEF_LABELS) 0
-
-set ::env(LINTER_DEFINES) LINT_INCLUDE
