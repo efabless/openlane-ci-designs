@@ -3,6 +3,8 @@
     "VERILOG_FILES": "dir::src/y_huff.v",
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
     "GPL_CELL_PADDING": 4,
     "DPL_CELL_PADDING": 4,
     "FP_CORE_UTIL": 25,

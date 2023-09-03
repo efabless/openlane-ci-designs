@@ -3,6 +3,8 @@
     "VERILOG_FILES": "dir::src/aes.v",
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
     "FP_CORE_UTIL": 15,
     "pdk::sky130*": {
         "scl::sky130_fd_sc_hd": {

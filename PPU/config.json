@@ -6,6 +6,8 @@
     "GPL_CELL_PADDING": 4,
     "DPL_CELL_PADDING": 4,
     "FP_CORE_UTIL": 20,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
     "pdk::gf180mcu*": {
         "MAX_FANOUT_CONSTRAINT": 8,
         "CLOCK_PERIOD": 18.0

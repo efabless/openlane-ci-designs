@@ -4,6 +4,8 @@
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
     "GPL_CELL_PADDING": 2,
     "DPL_CELL_PADDING": 2,
     "CLOCK_PERIOD": 24,

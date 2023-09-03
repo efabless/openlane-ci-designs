@@ -6,6 +6,8 @@
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
     "GPL_CELL_PADDING": 4,
     "DPL_CELL_PADDING": 4,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
     "FP_CORE_UTIL": 20,
     "pdk::sky130*": {
         "MAX_FANOUT_CONSTRAINT": 6,
