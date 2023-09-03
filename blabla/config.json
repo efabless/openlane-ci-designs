@@ -3,15 +3,13 @@
     "VERILOG_FILES": "dir::src/blabla.v",
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
-    "FP_SIZING": "absolute",
-    "DIE_AREA": "0 0 1200 1200",
     "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "GLB_RESIZER_MAX_WIRE_LENGTH": 500,
+    "PL_RESIZER_MAX_WIRE_LENGTH": 500,
+    "CTS_CLK_MAX_WIRE_LENGTH": 500,
     "DIODE_ON_PORTS": "in",
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 13,
-        "CLOCK_PERIOD": 65,
-        "scl::sky130_fd_sc_hd": {
-            "FP_CORE_UTIL": 11
-        }
+        "FP_CORE_UTIL": 5,
+        "CLOCK_PERIOD": 65
     }
 }
