@@ -10,7 +10,7 @@
     "DIODE_ON_PORTS": "in",
     "pdk::gf180mcu*": {
         "MAX_FANOUT_CONSTRAINT": 8,
-        "CLOCK_PERIOD": 18.0
+        "CLOCK_PERIOD": 25
     },
     "pdk::sky130*": {
         "MAX_FANOUT_CONSTRAINT": 8,
