@@ -710,29 +710,29 @@ begin
         begin
             case (bRequest_w)
             `REQ_GET_STATUS:
-            begin
-                $display("GET_STATUS");
-            end
+//            begin
+//                $display("GET_STATUS");
+//            end
             `REQ_CLEAR_FEATURE:
             begin
-                $display("CLEAR_FEATURE");
+                //$display("CLEAR_FEATURE");
                 ctrl_ack_r = setup_set_w && setup_no_data_w;
             end
             `REQ_SET_FEATURE:
             begin
-                $display("SET_FEATURE");
+                //$display("SET_FEATURE");
                 ctrl_ack_r = setup_set_w && setup_no_data_w;
             end
             `REQ_SET_ADDRESS:
             begin
-                $display("SET_ADDRESS: Set device address %d", wValue_w[6:0]);
+                //$display("SET_ADDRESS: Set device address %d", wValue_w[6:0]);
                 ctrl_ack_r    = setup_set_w && setup_no_data_w;
                 device_addr_r = wValue_w[6:0];
                 addressed_r   = 1'b1;
             end
             `REQ_GET_DESCRIPTOR:
             begin
-                $display("GET_DESCRIPTOR: Type %d", bDescriptorType_w);
+                //$display("GET_DESCRIPTOR: Type %d", bDescriptorType_w);
 
                 case (bDescriptorType_w)
                 `DESC_DEVICE:
@@ -778,11 +778,11 @@ begin
             end
             `REQ_GET_CONFIGURATION:
             begin
-                $display("GET_CONF");
+                //$display("GET_CONF");
             end
             `REQ_SET_CONFIGURATION:
             begin
-                $display("SET_CONF: Configuration %x", wValue_w);
+                //$display("SET_CONF: Configuration %x", wValue_w);
 
                 if (wValue_w == 16'd0)
                 begin
@@ -800,12 +800,12 @@ begin
             end
             `REQ_GET_INTERFACE:
             begin
-                $display("GET_INTERFACE");
+                //$display("GET_INTERFACE");
                 ctrl_stall_r = 1'b1;
             end
             `REQ_SET_INTERFACE:
             begin
-                $display("SET_INTERFACE: %x %x", wValue_w, wIndex_w);
+                //$display("SET_INTERFACE: %x %x", wValue_w, wIndex_w);
                 if (wValue_w == 16'd0 && wIndex_w == 16'd0)
                     ctrl_ack_r   = setup_set_w && setup_no_data_w;
                 else
@@ -827,7 +827,7 @@ begin
             case (bRequest_w)
             `CDC_GET_LINE_CODING:
             begin
-                $display("CDC_GET_LINE_CODING");
+                //$display("CDC_GET_LINE_CODING");
                 desc_addr_r    = `ROM_CDC_LINE_CODING_ADDR;
                 ctrl_get_len_r = `ROM_CDC_LINE_CODING_SIZE;
             end
