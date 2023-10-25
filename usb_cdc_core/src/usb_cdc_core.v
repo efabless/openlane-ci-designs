@@ -709,7 +709,7 @@ begin
         `USB_STANDARD_REQUEST:
         begin
             case (bRequest_w)
-            `REQ_GET_STATUS:
+//            `REQ_GET_STATUS:
 //            begin
 //                $display("GET_STATUS");
 //            end
