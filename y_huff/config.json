@@ -1,20 +1,27 @@
 {
-    "DESIGN_NAME": "y_huff",
-    "VERILOG_FILES": "dir::src/y_huff.v",
-    "CLOCK_PORT": "clk",
-    "CLOCK_NET": "clk",
-    "RUN_HEURISTIC_DIODE_INSERTION": true,
-    "DIODE_ON_PORTS": "in",
-    "GPL_CELL_PADDING": 4,
-    "DPL_CELL_PADDING": 4,
-    "FP_CORE_UTIL": 25,
-    "pdk::sky130*": {
-        "FP_SIZING": "absolute",
-        "DIE_AREA": "0 0 700 700",
-        "CLOCK_PERIOD": 11.35,
-        "MAX_FANOUT_CONSTRAINT": 6
-    },
-    "pdk::gf180mcu*": {
-        "DIODE_INSERTION_STRATEGY": 3
-    }
+  "DESIGN_NAME": "y_huff",
+  "VERILOG_FILES": "dir::src/y_huff.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_NET": "clk",
+  "RUN_HEURISTIC_DIODE_INSERTION": true,
+  "DIODE_ON_PORTS": "in",
+  "GPL_CELL_PADDING": 4,
+  "DPL_CELL_PADDING": 4,
+  "FP_CORE_UTIL": 25,
+  "pdk::sky130*": {
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 700 700",
+    "CLOCK_PERIOD": 11.35,
+    "MAX_FANOUT_CONSTRAINT": 6
+  },
+  "pdk::gf180mcu*": {
+    "DIODE_INSERTION_STRATEGY": 3,
+    "MAX_FANOUT_CONSTRAINT": 10,
+    "RUN_HEURISTIC_DIODE_INSERTION": 0,
+    "CLOCK_WIRE_RC_LAYER": "Metal2",
+    "PL_RESIZER_HOLD_SLACK_MARGIN": "0.05",
+    "GLB_RESIZER_HOLD_SLACK_MARGIN": "0.01",
+    "GLB_RESIZER_SETUP_SLACK_MARGIN": "0.3",
+    "PL_RESIZER_SETUP_SLACK_MARGIN": "0.3"
+  }
 }
