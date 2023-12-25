@@ -16,7 +16,12 @@
     ],
     "EXTRA_LEFS": "dir::lef/aes_example.lef",
     "EXTRA_GDS_FILES": "dir::gds/aes_example.gds.gz",
-    "EXTRA_SPEFS": ["aes_example", "dir::spef/multicorner/aes_example.min.spef.gz", "dir::spef/multicorner/aes_example.nom.spef.gz", "dir::spef/multicorner/aes_example.max.spef.gz"],
+    "EXTRA_SPEFS": [
+        "aes_example",
+        "dir::spef/multicorner/aes_example.min.spef.gz",
+        "dir::spef/multicorner/aes_example.nom.spef.gz",
+        "dir::spef/multicorner/aes_example.max.spef.gz"
+    ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
     "FP_PDN_CHECK_NODES": 0,
@@ -72,5 +77,23 @@
     "RT_MAX_LAYER": "met4",
     "DIE_AREA": "0 0 2920 3520",
     "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
-    "MAGIC_LEF_WRITE_USE_GDS": 0
+    "MAGIC_LEF_WRITE_USE_GDS": 0,
+    "VSRC_LOC_FILES": [
+        "vccd1",
+        "dir::vsrc/upw_vccd1_vsrc.loc",
+        "vccd2",
+        "dir::vsrc/upw_vccd2_vsrc.loc",
+        "vdda1",
+        "dir::vsrc/upw_vdda1_vsrc.loc",
+        "vdda2",
+        "dir::vsrc/upw_vdda2_vsrc.loc",
+        "vssa1",
+        "dir::vsrc/upw_vssa1_vsrc.loc",
+        "vssa2",
+        "dir::vsrc/upw_vssa2_vsrc.loc",
+        "vssd1",
+        "dir::vsrc/upw_vssd1_vsrc.loc",
+        "vssd2",
+        "dir::vsrc/upw_vssd2_vsrc.loc"
+    ]
 }
